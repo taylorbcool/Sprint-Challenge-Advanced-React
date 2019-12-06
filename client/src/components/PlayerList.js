@@ -24,11 +24,6 @@ const PlayerList = () => {
             <div>
                 <SearchBar array={[...players]} />
             </div>
-            {/* {players.map((player) => {
-                return(
-                    <Player key={player.id} player={player} />
-                )
-            })} */}
         </div>
     )
 }

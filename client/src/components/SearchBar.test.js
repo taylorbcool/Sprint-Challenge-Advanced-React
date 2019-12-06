@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import SearchBar from './Searchbar';
+import App from '../App';
 
 test('should contain a search bar', () => {
-    const { getByText } = render(<SearchBar />)
-    getByText(/search/i)
+    const { getAllByText } = render(<App />)
+    getAllByText(/search/i)
   })

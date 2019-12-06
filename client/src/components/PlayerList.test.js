@@ -3,6 +3,10 @@ import { render } from '@testing-library/react';
 import PlayerList from './PlayerList';
 
 test('should display players', () => {
-    const { getAllByText } = render(<PlayerList />)
+  act(() => {
+    /* fire events that update state */
+    // ??????
+  });
+  const { getAllByText } = render(<PlayerList />)
     getAllByText(/player/i)
   })
